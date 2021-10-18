@@ -11,7 +11,7 @@
 }
 
 .home {
-    background-image: url("https://scontent.ftpe2-1.fna.fbcdn.net/v/t1.6435-9/219936024_4818665368149222_7123907689151490580_n.jpg?_nc_cat=111&ccb=1-4&_nc_sid=8bfeb9&_nc_ohc=GKdo1gE1ppAAX9NMScd&_nc_ht=scontent.ftpe2-1.fna&oh=2e68afbcb912ed99b4a8dc0c43df6191&oe=61398BAA");
+    background-image: url("../img/219936024_4818665368149222_7123907689151490580_n.jpeg");
     height: 800px;
     background-attachment: fixed;
 }
@@ -30,7 +30,7 @@
 }
 
 .middle-img {
-    background-image: url("https://scontent.ftpe2-2.fna.fbcdn.net/v/t31.18172-8/28516417_2056011391081314_718695606715841555_o.jpg?_nc_cat=109&ccb=1-4&_nc_sid=e3f864&_nc_ohc=MKYqC11wvicAX-CU6Ou&_nc_ht=scontent.ftpe2-2.fna&oh=f1090fedcd1f2ff53a3c61bfe3773615&oe=6138B30E");
+    background-image: url("../img/28516417_2056011391081314_718695606715841555_o.jpeg");
     height: 797px;
     background-attachment: fixed;
 }
@@ -78,4 +78,19 @@
 .list-group-item:focus{
     color:white !important;
     background-color: #BEAC74!important;
+}
+
+.card-img-top{
+    height:200px;
+}
+.menu .card{
+    margin-right:10px;
+}
+.btn-cart{
+    position:relative;
+}
+.btn-cart .badge{
+    position: absolute;
+    top:-1px;
+    right:-1px;
 }

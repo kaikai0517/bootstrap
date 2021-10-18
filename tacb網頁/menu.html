@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tacb</title>
-    <link rel="Shortcut Icon" href="img/28167897_2056046257744494_8344237162303762394_n.jpeg">
+    <link rel="Shortcut Icon" href="img/a8tgk-exzo5.svg">
     <link rel="stylesheet" href="stylesheets/all.css">
     <link rel="stylesheet" href="stylesheets/custom.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
@@ -21,7 +21,7 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light bg-m-black py-2 sticky-top" >
         <div class="container">
-            <a class="navbar-brand text-gold" href="index.html"><img src="img/28167897_2056046257744494_8344237162303762394_n.jpeg" alt="" style="width:50px;height:50px"
+            <a class="navbar-brand text-gold" href="index.html"><img src="img/a8tgk-exzo5.svg" alt="" style="width:50px;height:50px"
                     class="d-inline-block align-text-center">TACB</a>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,7 +34,7 @@
                         <a class="nav-link text-gold nav-m" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-gold nav-m" href="#about">About</a>
+                        <a class="nav-link text-secondary nav-m disabled" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-gold nav-m" href="menu.html">Menu</a>
@@ -43,9 +43,44 @@
                         <a class="nav-link text-gold nav-m" href="event.html">event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-gold nav-m" href="#contact">Contact</a>
+                        <a class="nav-link text-secondary nav-m disabled" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-sm btn-cart" data-bs-toggle="dropdown">
+                      <i class="fas fa-shopping-cart fa-2x text-gold"></i>
+                      <span class="badge bg-danger">2</span>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-end bg-m-black">
+                      <div class="px-4 py-3 ">
+                          <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col"  colspan="4" class="text-gold">已選擇商品</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row"><a href="" data-name="Homesick．老朋友" data-bs-toggle="modal" data-bs-target="#delete"><i class="fas fa-trash-alt text-secondary" ></i></a></th>
+                                  <td class="text-gold" >Homesick．老朋友</td>
+                                  <td class="text-center text-gold">1杯</td>
+                                  <td class="text-gold">350$</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><a href="" data-name="有啊罵味道的蒙汗藥" data-bs-toggle="modal" data-bs-target="#delete"> <i class="fas fa-trash-alt text-secondary"></i></a></th>
+                                  <td class="text-gold">有啊罵味道的蒙汗藥</td>
+                                  <td class="text-gold">一杯</td>
+                                  <td class="text-gold">400$</td>
+                                </tr>
+                                
+                                  
+                                
+                              </tbody>
+                            </table>
+                            <a  href="pay.html" type="button" class="btn btn-gold w-100">結帳去</a>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     </nav>
@@ -76,83 +111,126 @@
                         <a class="list-group-item bg-m-black list-group-item-action text-gold" id="list-else-list" data-toggle="list" href="#list-else" role="tab" aria-controls="settings">其他</a>
                       </div>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10 menu">
                     <div class="tab-content text-gold" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-gin" role="tabpanel" aria-labelledby="list-gin-list">
                             <div class="row">
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/1.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">有啊罵味道的蒙汗藥</h5>
                                             <p class="card-text text-gold">十全大補琴酒/肉桂艾碧斯/蜂蜜/紅牛</p>
+                                            <div class="card-footer text-danger h3">
+                                              <p>400$</p> 
+                                              <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                            </div>
                                           </div>
                                         </div>
                                       </div>
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/2.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">Homesick．老朋友</h5>
                                             <p class="card-text text-gold">老湯姆琴酒/鳳梨糖/新鮮柳橙汁/通寧水</p>
                                           </div>
-                                          
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/3.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">卓别林．也在尋找愛情</h5>
                                             <p class="card-text text-gold">黑刺李琴酒/杏桃香甜酒/覆盆梅香甜酒/蛋白</p>
                                           </div>
-                                          
+                                          <div class="card-footer text-danger h3">
+                                           <p>330$</p>
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button> 
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
+                                        
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/4.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">戰勝體脂肪</h5>
-                                              <p class="card-text text-gold">琴酒/葡萄柚香甜酒/義式開胃酒/新鮮小黃瓜/蘇打水</p>
+                                              <p class="card-text text-gold">琴酒/葡萄柚香甜酒/義式開胃酒/新鮮小黃瓜</p>
                                             </div>
-                                            
+                                            <div class="card-footer text-danger h3">
+                                             <p>330$</p>
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button> 
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/5.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">關於初戀...乾我屁事</h5>
                                               <p class="card-text text-gold">琴酒/玫瑰香甜酒/食鹽水/新鮮金桔</p>
                                             </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>330$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/6.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">一日海盜．終身海盜</h5>
-                                              <p class="card-text text-gold">琴酒/夏特勒茲黃/白柑橘香甜酒/蘆薈香甜酒/九層塔風味油</p>
+                                              <p class="card-text text-gold">琴酒/夏特勒茲黃/白柑橘香甜酒/蘆薈香甜酒</p>
+                                            </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>350$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/7.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">極光．北極熊</h5>
-                                              <p class="card-text text-gold">琴酒/水蜜桃香甜酒/薑味香甜酒/蘇打水/通寧水</p>
+                                              <p class="card-text text-gold">琴酒/水蜜桃香甜酒/薑味香甜酒/蘇打水</p>
+                                            </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>330$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                             </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/8.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">沒有你在．我都自己來</h5>
                                               <p class="card-text text-gold">琴酒/椰子香甜酒/鮮奶油/蛋白</p>
                                             </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>400$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/9.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">薄不離椒</h5>
                                               <p class="card-text text-gold">琴酒/強化行葡萄酒/甜椒/薄荷/九層塔油</p>
+                                            </div>
+                                            <div class="card-footer text-danger h3 ">
+                                             <p>350$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                             </div>
                                           </div>
                                         </div>
@@ -164,35 +242,53 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/10.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">福爾摩沙</h5>
-                                            <p class="card-text text-gold">菊花伏特加/茉莉花香甜酒/白薄荷香甜酒/蜂蜜</p>
+                                            <p class="card-text text-gold">菊花伏特加/茉莉香甜酒/白薄荷香甜酒/蜂蜜</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>400$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                 <div class="col-md-4">
                                     <div class="card bg-m-black mb-5">
+                                      <img src="img/menu/11.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                           <h5 class="card-title text-light">禁忌果實．亞當</h5>
                                           <p class="card-text text-gold">無花果伏特加/蘋果糖/蛋白</p>
                                         </div>
-                                        
+                                        <div class="card-footer text-danger h3">
+                                         <p>350$</p> 
+                                         <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="col-md-4">
                                       <div class="card bg-m-black mb-5">
+                                        <img src="img/menu/12.jpeg" class="card-img-top" alt="...">
                                         <div class="card-body">
                                           <h5 class="card-title text-light">你～哈～草～了～嗎？</h5>
-                                          <p class="card-text text-gold">迷迭香伏特加/哈密瓜開胃酒/黑櫻桃香甜酒/新鮮葡萄汁</p>
+                                          <p class="card-text text-gold">迷迭香伏特加/哈密瓜開胃酒/黑櫻桃香甜酒</p>
                                         </div>
-                                        
+                                        <div class="card-footer text-danger h3">
+                                         <p>350$</p> 
+                                         <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                        </div>
                                       </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/13.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">十二點了．仙度瑞拉．南瓜馬車</h5>
                                             <p class="card-text text-gold">奶洗南瓜牛奶伏特加</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
@@ -204,18 +300,27 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/14.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">餘威油在</h5>
                                             <p class="card-text text-gold">奶油威士忌/強化型葡萄酒/安格式苦精/楓糖</p>
                                           </div>
-                                          
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/15.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">那一夜．你在桂花樹下對我說不要</h5>
                                               <p class="card-text text-gold">自製鳳梨威士忌/自製桂花蜜/桂花苦精</p>
+                                            </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>350$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                             </div>
                                           </div>
                                         </div>
@@ -227,26 +332,40 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/16.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">馬賽漁港．漁夫</h5>
-                                            <p class="card-text text-gold">香料萊姆酒/椰子香甜酒/魚露/番茄汁/蜂蜜/昆布苦精</p>
+                                            <p class="card-text text-gold">香料萊姆酒/椰子香甜酒/魚露/番茄汁/蜂蜜</p>
                                           </div>
-                                          
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                          </div>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/17.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">親愛的~不用加糖了．你夠甜了</h5>
                                             <p class="card-text text-gold">蘭姆酒/哈密瓜開胃酒/椰子香甜酒</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>330$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/18.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">浴血重生．紅鶴</h5>
-                                            <p class="card-text text-gold">紅茶蘭姆酒/玫瑰利口酒/強化葡萄酒/肉桂艾碧斯</p>
+                                            <p class="card-text text-gold">紅茶蘭姆酒/玫瑰酒/強化葡萄酒/肉桂艾碧斯</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
@@ -258,26 +377,40 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/19.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">這奶有毒</h5>
-                                            <p class="card-text text-gold">丁香肉桂白蘭地/白柑橘香甜酒/咖啡香甜酒/牛奶/蜂蜜</p>
+                                            <p class="card-text text-gold">丁香肉桂白蘭地/白柑橘酒/咖啡酒/牛奶/蜂蜜</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/20.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">注意!穿過亂流．您將抵達西班牙</h5>
                                             <p class="card-text text-gold">白蘭地/紅酒/艾普羅/巨峰紫</p>
                                           </div>
-                                          
+                                          <div class="card-footer text-danger h3">
+                                           <p>400$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                           <div class="card bg-m-black mb-5">
+                                            <img src="img/menu/21.jpeg" class="card-img-top" alt="...">
                                             <div class="card-body">
                                               <h5 class="card-title text-light">18~38 In the Prosess of Maturity</h5>
-                                              <p class="card-text text-gold">白蘭地/TUVE bitter利口酒/櫻桃香甜酒/強化行葡萄酒/紅酒醋</p>
+                                              <p class="card-text text-gold">白蘭地/TUVE bitter/櫻桃酒/葡萄酒/紅酒醋</p>
+                                            </div>
+                                            <div class="card-footer text-danger h3">
+                                             <p>330$</p> 
+                                             <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                             </div>
                                           </div>
                                         </div>
@@ -289,26 +422,41 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/22.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">紫氣冬來</h5>
-                                            <p class="card-text text-gold">洛神龍舌蘭/紫蘇香甜酒/強化型葡萄酒/冬瓜糖</p>
+                                            <p class="card-text text-gold">洛神龍舌蘭/紫蘇酒/強化型葡萄酒/冬瓜糖</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/23.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">我單身．但不是狗</h5>
                                             <p class="card-text text-gold">龍舌蘭/青蘋果香甜酒/夏特勒茲黃</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>330$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                      
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/24.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">奮不顧身地前進</h5>
                                             <p class="card-text text-gold">洛神龍舌蘭/玫瑰香甜酒/蛋白/雪碧</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>330$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
@@ -320,26 +468,41 @@
                                 <div class="card-group text-center">
                                     <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/25.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">媽．我在水上飄</h5>
-                                            <p class="card-text text-gold">金門高粱/勒薩多黑櫻桃酒/夏特勒茲綠/君度橙酒</p>
+                                            <p class="card-text text-gold">金門高粱/黑櫻桃酒/夏特勒茲綠/君度橙酒</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/26.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">鄧麗君．也愛喝咖啡</h5>
                                             <p class="card-text text-gold">梅酒/咖啡香甜酒/接骨木香甜酒</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>350$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
                                       
                                       <div class="col-md-4">
                                         <div class="card bg-m-black mb-5">
+                                          <img src="img/menu/27.jpeg" class="card-img-top" alt="...">
                                           <div class="card-body">
                                             <h5 class="card-title text-light">Ｔ.A.C.B多多綠．好喝喔</h5>
                                             <p class="card-text text-gold">綠茶生命之水/奶洗蜂蜜多多/啤酒</p>
+                                          </div>
+                                          <div class="card-footer text-danger h3">
+                                           <p>400$</p> 
+                                           <button type="button" class="btn btn-gold w-100">加入購物車</button>
                                           </div>
                                         </div>
                                       </div>
@@ -444,6 +607,24 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-m-black text-danger">
+          <div class="modal-header bg-m-black">
+            <h5>確定刪除 <span  class="modal-title text-light" id="exampleModalLabel"></span>？</h5>
+            <button type="button" class="btn btn-outline-gold" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+              <div class="d-flex justify-content-end">
+                  <button class="btn btn-outline-light" type="button">取消</button>
+                  <button class="btn btn-danger" type="button">確定</button>
+                </div>
+          </div>
+          </div>
+          
+        </div>
+      
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
@@ -463,6 +644,18 @@
                     scrollTop:0
                 }, 2000);
             });
+            $('#delete').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget); // Button that triggered the modal
+  var recipient = button.data('name'); // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this);
+  modal.find('.modal-title').text(recipient);
+
+  
+});
+
+
         });
     </script>
 </body>
