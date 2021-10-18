@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -15071,4 +15072,102 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
+
+.nav-m {
+  margin: 0 35px;
+}
+
+.nav-m:hover {
+  color: white !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(190,172,116)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.home {
+  background-image: url("../img/219936024_4818665368149222_7123907689151490580_n.jpeg");
+  height: 800px;
+  background-attachment: fixed;
+}
+
+.border-outside {
+  border: 1px solid #BEAC74;
+}
+
+.home .bg-m-black {
+  opacity: .9;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.middle-img {
+  background-image: url("../img/28516417_2056011391081314_718695606715841555_o.jpeg");
+  height: 797px;
+  background-attachment: fixed;
+}
+
+.words {
+  line-height: 35px;
+}
+
+.group button,
+.group .dropdown-item {
+  width: 300px;
+}
+
+.social a {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.text-right {
+  text-align: right;
+}
+.scroll-top{
+  position: fixed;
+  bottom:40px;
+  right:15px;
+  border:1px solid #BEAC74;
+  padding:0 5px;
+}
+
+.event{
+  border-bottom: 1px solid white;
+  padding:40px 0;
+}
+.remove{
+  display:none;
+}
+.event:hover{
+  color:#BEAC74 !important;
+  
+}
+.list-group-item:hover{
+  color:white !important;
+  background-color: #BEAC74!important;
+}
+.list-group-item:focus{
+  color:white !important;
+  background-color: #BEAC74!important;
+}
+
+.card-img-top{
+  height:200px;
+}
+.menu .card{
+  margin-right:10px;
+}
+.btn-cart{
+  position:relative;
+}
+.btn-cart .badge{
+  position: absolute;
+  top:-1px;
+  right:-1px;
+}
+
 /*# sourceMappingURL=all.css.map */
