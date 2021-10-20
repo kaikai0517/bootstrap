@@ -4,7 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -15089,6 +15088,7 @@ fieldset:disabled .btn {
   background-image: url("../img/219936024_4818665368149222_7123907689151490580_n.jpeg");
   height: 800px;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .border-outside {
@@ -15108,6 +15108,7 @@ fieldset:disabled .btn {
   background-image: url("../img/28516417_2056011391081314_718695606715841555_o.jpeg");
   height: 797px;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .words {
@@ -15124,50 +15125,42 @@ fieldset:disabled .btn {
   text-decoration: none;
 }
 
-.text-right {
-  text-align: right;
-}
-.scroll-top{
+.scroll-top {
   position: fixed;
-  bottom:40px;
-  right:15px;
-  border:1px solid #BEAC74;
-  padding:0 5px;
+  bottom: 40px;
+  right: 15px;
+  border: 1px solid #BEAC74;
+  padding: 0 5px;
 }
 
-.event{
+.event {
   border-bottom: 1px solid white;
-  padding:40px 0;
-}
-.remove{
-  display:none;
-}
-.event:hover{
-  color:#BEAC74 !important;
-  
-}
-.list-group-item:hover{
-  color:white !important;
-  background-color: #BEAC74!important;
-}
-.list-group-item:focus{
-  color:white !important;
-  background-color: #BEAC74!important;
+  padding: 40px 0;
 }
 
-.card-img-top{
-  height:200px;
-}
-.menu .card{
-  margin-right:10px;
-}
-.btn-cart{
-  position:relative;
-}
-.btn-cart .badge{
-  position: absolute;
-  top:-1px;
-  right:-1px;
+.remove {
+  display: none;
 }
 
+.event:hover {
+  color: #BEAC74 !important;
+}
+
+.list-group-item:hover {
+  color: white !important;
+  background-color: #BEAC74 !important;
+}
+
+.list-group-item:focus {
+  color: white !important;
+  background-color: #BEAC74 !important;
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+.menu .card {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=all.css.map */
